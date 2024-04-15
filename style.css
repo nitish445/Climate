@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 120%;
+}
+
+.card {
+  background: #295f5ed0;
+  color: rgb(215, 215, 215);
+  padding: 2.5em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #ffffff2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 24px;
+  background: #ffffff2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 120px);
+}
+
+button:hover {
+  background: #5b5a5a6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center; /* Center-align items horizontally */
+  align-items: center;
+  flex-direction: column; /* Adjust flex direction to stack items vertically */
+}
+
+
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  opacity: 0.5;
+}
+
+.weather.loading:after {
+  content: "Loading...";
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+input.search-bar::placeholder {
+  color: rgb(209, 209, 209);
+}
